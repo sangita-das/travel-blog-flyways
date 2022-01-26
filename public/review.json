@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Hayden Read",
+    "profession": "Sales Manager",
+    "description": "At the end of the day, reading a good travel blog should feel like you’re getting advice from a personal friend who knows what you like and what you don’t.",
+    "img": "https://templates.envytheme.com/herobike/default/assets/img/client-avatar3.jpg",
+    "email": "hayden@gmail.com",
+    "star": 5
+  },
+  {
+    "name": "Quinn Nolan",
+    "profession": "Teacher",
+    "description": " A very emotional experience. Thank you so much for a trip! I will always be grateful for your help in all of the planning!Thank you again for all your efforts.",
+    "img": "https://templates.envytheme.com/herobike/default/assets/img/client-avatar2.jpg",
+    "email": "nolan@gmail.com",
+    "star": 4.5
+  },
+  {
+    "name": "Sammy Peters",
+    "profession": "student",
+    "description": "Never could I have imagined the wonderful experiences that awaited me/us/before we began our trip.",
+    "img": "https://templates.envytheme.com/herobike/default/assets/img/client-avatar1.jpg",
+    "email": "sammy@gmail.com",
+    "star": 5
+  },
+  {
+    "name": "Jhon Rock",
+    "profession": "student",
+    "description": "I have been on numerous trips to other countries, but this trip has been my favorite. My grandson is ready to go next year when he will be 17 years old and I am looking forward to it.",
+    "img": "https://templatekits.themewarrior.com/roadpedal/wp-content/uploads/sites/29/2021/08/testimo1.jpg",
+    "email": "jhon@rock.com",
+    "star": 4
+  },
+  {
+    "name": "Olivar Thomas",
+    "profession": "Teacher",
+    "description": "I had an absolutely FABULOUS time in Israel. Everything you arranged went smooth as silk. And Ariel Stollar? Simply terrific. What a nice guy.  Thanks again!",
+    "img": "https://templatekits.themewarrior.com/roadpedal/wp-content/uploads/sites/29/2021/08/testi06.jpg",
+    "email": "thomas@gmail.com",
+    "star": 5
+  },
+  {
+    "name": "David Smith",
+    "profession": "Doctor",
+    "description": "Best experience ever.  Rewarding, nourishing, rich, vibrant and brought my heritage to life. Formed lasting friendships with Israeli’s and Flyways team.",
+    "img": "https://templatekits.themewarrior.com/roadpedal/wp-content/uploads/sites/29/2021/08/testi03.jpg",
+    "email": "david@smith.com",
+    "star": 4.5
+  }
+]

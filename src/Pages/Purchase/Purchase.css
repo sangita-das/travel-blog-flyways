@@ -1,0 +1,19 @@
+input{
+  margin-bottom: 10px;
+  width: 400px;
+  text-align: center;
+  border-radius: 5px;
+}
+.service-details{
+  border-right: 2px solid gray;
+}
+
+@media only screen and (max-width: 600px) {
+   .service-details{
+       border: none;
+   } 
+
+   input{
+       width: 70%;
+   }
+}

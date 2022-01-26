@@ -1,0 +1,19 @@
+.footer-all{
+   
+  background-color: black;
+  color: gray;
+  align-items: center;
+  width: 100%;
+  margin-top: 170px;
+  
+  
+}
+.footer{
+  font-size: 15px;
+
+}
+.url{
+  text-decoration: none;
+  color: gray;
+}
+

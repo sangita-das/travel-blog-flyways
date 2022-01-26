@@ -1,0 +1,11 @@
+.blog{
+  width: 60%;
+} 
+
+.blog-box{
+  width: 80% ;
+  border: 2px solid gray;
+  padding: 20px;
+  border-radius: 20px;
+  margin: auto;
+}
