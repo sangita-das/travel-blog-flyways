@@ -23,7 +23,7 @@ const googleProvider =   new GoogleAuthProvider();
 
   
     useEffect(()=>{
-      const uri = `http://localhost:5000/users/${user.email}`;
+      const uri = `https://lit-wildwood-89046.herokuapp.com/users/${user.email}`;
       fetch(uri)
       .then(res => res.json())
       .then(data => setAdmin(data.admin))
@@ -112,12 +112,12 @@ useEffect( ()=>{
    
   if(method==='POST')
   {
-    axios.post('http://localhost:5000/users', newUser)
+    axios.post('https://lit-wildwood-89046.herokuapp.com/users', newUser)
     
   }
   else
   {
-    axios.put('http://localhost:5000/users', newUser)
+    axios.put('https://lit-wildwood-89046.herokuapp.com/users', newUser)
    
   }
   

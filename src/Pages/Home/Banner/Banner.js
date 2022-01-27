@@ -3,7 +3,7 @@ import { Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import banner1 from '../../../images/carousel-banner/bg-highlight1.png';
 import banner2 from '../../../images/carousel-banner/bg-highlight2.png';
-import banner3 from '../../../images/carousel-banner/bg-highlight3.png';
+import banner3 from '../../../images/img.jpg';
 
 import './Banner.css'
 
@@ -23,7 +23,7 @@ const Banner = () => {
           <Carousel.Caption>
             <div className=" my-5">
               <div className="mb-5 pb-5">
-                <h1><strong className="text-light">Enjoy your tour with
+                <h1><strong className="text-warning">Enjoy your tour with
                   "Flyways"</strong></h1>
                 <br />
                 <br />
@@ -31,7 +31,7 @@ const Banner = () => {
                   <br />can remember for the rest of their lives </h5>
               </div>
               <Link to={``}>
-                <button className="btn btn-light text-success fw-bold">Top Destination</button>
+                <button className="btn btn-secondary text-light  fw-bold">Top Destination</button>
               </Link>
             </div>
           </Carousel.Caption>
@@ -47,7 +47,7 @@ const Banner = () => {
           <Carousel.Caption>
             <div className=" my-5">
               <div className="mb-5 pb-5">
-                <h1><strong className="text-light">Enjoy your tour with
+                <h1><strong className="text-warning">Enjoy your tour with
                   "Flyways"</strong></h1>
                 <br />
                 <br />
@@ -70,15 +70,15 @@ const Banner = () => {
           <Carousel.Caption>
             <div className=" my-5">
               <div className="mb-5 pb-5">
-                <h1><strong className="text-light">Enjoy your tour with
+                <h1><strong className="text-warning">Enjoy your tour with
                   "Flyways"</strong></h1>
                 <br />
                 <br />
-                <h5 className="text-light fw-bold">We provide travelers with an authentic Jordanian experience that they
+                <h5 className="text-warning fw-bold">We provide travelers with an authentic Jordanian experience that they
                   <br />can remember for the rest of their lives </h5>
               </div>
               <Link to={``}>
-                <button className="btn btn-light text-success fw-bold">Top Destination</button>
+                <button className="btn btn-primary ul text-light fw-bold">Top Destination</button>
               </Link>
             </div>
           </Carousel.Caption>

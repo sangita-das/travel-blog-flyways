@@ -14,7 +14,7 @@ const UserOrders = () => {
     const [orders, setOrders] = useState([])
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/orders/${user.email}`)
+        fetch(`https://lit-wildwood-89046.herokuapp.com/orders/${user.email}`)
         .then(res => res.json())
         .then(data => setOrders(data))
     },[])
@@ -23,7 +23,7 @@ const UserOrders = () => {
         const procced = window.confirm('Are You Sure to Cancel Your Order?');
         if(procced)
         {
-            fetch(`http://localhost:5000/order/${id}`,{
+            fetch(`https://lit-wildwood-89046.herokuapp.com/order/${id}`,{
                 method: 'DELETE'
             })
             .then(res => res.json() )

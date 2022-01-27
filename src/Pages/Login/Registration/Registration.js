@@ -57,7 +57,7 @@ const Registration = () => {
             </div>
             <div className="mx-auto p-4 login" style={{border: '2px solid gray',
                         
-                        backgroundColor: ' rgba(   208, 234, 245  )  ',
+                        backgroundColor: ' Wheat ',
     
                         marginTop:'-600px',
                         borderRadius:'30px'
@@ -138,7 +138,7 @@ const Registration = () => {
 
                   
                       <p>-------------------</p>
-                      <Button onClick={handleGoogleSignIn} variant="danger"><i class="fab fa-google"></i>oogle Sign in</Button> 
+                      <Button onClick={handleGoogleSignIn} variant="warning"><i class="fab fa-google"></i>oogle Sign in</Button> 
 
                      
                 

@@ -12,7 +12,7 @@ const Purchase = () => {
     const {id} = useParams();
     const { register, handleSubmit, reset } = useForm();
 
-    const uri =`http://localhost:5000/services/${id}`
+    const uri =`https://lit-wildwood-89046.herokuapp.com/services/${id}`
     useEffect(()=>{
         fetch(uri)
         .then(res => res.json())
@@ -23,7 +23,7 @@ const Purchase = () => {
    
     const onSubmit = data => {
         console.log(data)
-        axios.post('http://localhost:5000/orders', data)
+        axios.post('https://lit-wildwood-89046.herokuapp.com/orders', data)
         
         .then(res => {
             if(res.data.insertedId)

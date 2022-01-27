@@ -24,7 +24,7 @@ const Review = () => {
     const handleReview = event =>{
         event.preventDefault();
         const userReview = {user: user.displayName ,review:review, rating:value}
-        axios.post('http://localhost:5000/reviews',userReview)
+        axios.post('https://lit-wildwood-89046.herokuapp.com/reviews',userReview)
         .then(res=> {
             if(res.data.insertedId)
             {

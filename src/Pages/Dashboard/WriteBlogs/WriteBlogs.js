@@ -26,7 +26,7 @@ const WriteBlogs = () => {
             formData.append('email', user.email)
             formData.append('author', user.displayName);
 
-            fetch('http://localhost:5000/blogs', {
+            fetch('https://lit-wildwood-89046.herokuapp.com/blogs', {
             method: 'POST',
             body: formData
             })

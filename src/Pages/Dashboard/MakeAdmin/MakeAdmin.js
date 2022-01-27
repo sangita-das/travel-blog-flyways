@@ -14,7 +14,7 @@ const MakeAdmin = () => {
     const handleadmin = event =>{
         event.preventDefault()
         const admin = {email: email}
-        axios.put('http://localhost:5000/users/admin',admin)
+        axios.put('https://lit-wildwood-89046.herokuapp.com/users/admin',admin)
         .then(res =>{
                 console.log(res)
                 if(res.data.modifiedCount)

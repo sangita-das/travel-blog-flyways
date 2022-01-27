@@ -7,7 +7,7 @@ const AddProduct = () => {
     const { register, handleSubmit, reset } = useForm();
   const onSubmit = data =>{
    
-    axios.post('http://localhost:5000/services', data)
+    axios.post('https://lit-wildwood-89046.herokuapp.com/services', data)
     .then(res=> {
         if(res.data.insertedId)
         {

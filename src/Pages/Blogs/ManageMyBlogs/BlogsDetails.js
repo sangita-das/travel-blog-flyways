@@ -11,7 +11,7 @@ const BlogsDetails = () => {
     const [loading, setLoading] = useState(true)
     useEffect(()=>{
          setLoading(true)
-        fetch(`http://localhost:5000/blogs/${id.id}`)
+        fetch(`https://lit-wildwood-89046.herokuapp.com/blogs/${id.id}`)
         .then(res => res.json())
         .then(data => {
             setBlog(data)
@@ -27,15 +27,15 @@ const BlogsDetails = () => {
         <div className="w-75 mx-auto my-5">
             <div>
                 
-                <img style={{width:'50%', height:'50%'}}  className='img-fluid my-4'  src={`data:image/jpeg;base64,${blog.image}`} alt="" />
+                <img style={{width:'50%', height:'50%'}}  className='img-fluid my-4'  src={`data:image/jpeg;base64,${blog?.image}`} alt="" />
 
             </div> 
 
             <div className="text-start">
-            <h2 className="fw-bold">{blog.title} </h2>
-                <h6 style={{color:'blue'}}> Blog By {blog.author} </h6>
+            <h2 className="fw-bold">{blog?.title} </h2>
+                <h6 style={{color:'blue'}}> Blog By {blog?.author} </h6>
 
-                <p> {blog.description} </p>
+                <p> {blog?.description} </p>
             </div>
         
         </div>

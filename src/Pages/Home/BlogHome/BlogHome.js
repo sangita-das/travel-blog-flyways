@@ -16,19 +16,23 @@ import useBlog from '../../../hooks/useBlog';
 SwiperCore.use([EffectCoverflow,Pagination]);
 
 const BlogHome = () => {
-    const {activeBlogs} = useBlog()
+    const {blogs} = useBlog()
 
     return (
 
             <div  className=" my-5">
-     <h2 style={{color:' #f34612 '}} className="mb-3 fw-bold fs-1" >Blog Posts</h2>
+     <h2 style={{color:' Gold '}} className="mb-3 fw-bold fs-1" >Blog Posts</h2>
+     
+     
      <p>One inspiring story is worth traveling. Discover more about local food, tradition and history. Read the stories that make you want to travel.</p>
-     <hr />
+     
+     <p style={{color:'GoldenRod'}}> -----------------------------------------------------</p>
+
     <div className="slider-portfolio">
 
     {
                  
-                 (activeBlogs.length < 1) && <Spinner animation="border" variant="success"></Spinner> 
+                 (blogs.length < 1) && <Spinner animation="border" variant="disabled"></Spinner> 
              
          }
     <Swiper effect={'coverflow'} grabCursor={true} centeredSlides={true} slidesPerView={'auto'} coverflowEffect={{
@@ -40,7 +44,7 @@ const BlogHome = () => {
 }} pagination={true} className="mySwiper">
      
      {
-         activeBlogs.slice(0,5).map(blog => 
+         blogs.slice(0,5).map(blog => 
             
             <SwiperSlide key={blog._id}>
             <div 
@@ -50,18 +54,18 @@ const BlogHome = () => {
             style={{
                     width:'400px',
                     height:'600px',
-                    border: '3px solid gray'
+                    border: '3px solid PaleGoldenRod'
                 }} className=" mx-auto text-center p-3">
                 <div 
                  
                 >
-                    <img className="img-fluid"  style={{width:'250px', height:'250px', borderRadius:'50%'}} src={`data:image/*;base64,${blog.image}`}alt="" />
+                    <img className="img-fluid"  style={{width:'250px', height:'250px', borderRadius:'50%'}} src={`data:image/*;base64,${blog?.image}`}alt="" />
                 </div>
                 <div >
                     <h4> {blog.title.slice(0,50)} </h4>
-                    <h5 style={{color:'green'}}> {blog.author} </h5>
+                    <h5 style={{color:'green'}}> {blog?.author} </h5>
                     <p>{blog.description.slice(0,250)}</p>
-                    <Link to={`/blog/${blog._id}`}>
+                    <Link to={`/blog/${blog?._id}`}>
                     <Button className='w-50 mx-auto' variant='success'> Read More </Button>
                     </Link>
                 </div>

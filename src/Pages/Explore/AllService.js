@@ -3,7 +3,7 @@ import Rating from "react-rating";
 import { Card, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const AllProduct = ({service}) => {
+const AllService = ({service}) => {
 
     // Destructuring service object
     const {img, name, address, description, star, _id, BDT} = service;
@@ -44,4 +44,4 @@ const AllProduct = ({service}) => {
     );
 };
 
-export default AllProduct;
+export default AllService;

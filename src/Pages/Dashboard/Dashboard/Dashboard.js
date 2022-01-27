@@ -51,10 +51,16 @@ function Dashboard(props) {
  
    console.log(admin)
 
+   const bgColor = {
+    backgroundColor: '#aed581',
+    backgroundBlendMode: 'hard-light',
+  
+  }
+
 
   const drawer = (
      
-    <div>
+    <div style={bgColor}>
       <Toolbar />
       <Divider />
       <List sx={{paddingTop: '30%'}}>
@@ -116,7 +122,7 @@ function Dashboard(props) {
   const [roles, setRoles] = useState(null);
 
   useEffect(()=>{
-    fetch(`http://localhost:5000/users/${user.email}`)
+    fetch(`https://lit-wildwood-89046.herokuapp.com/users/${user.email}`)
     .then(res => res.json())
     .then(data => setRoles(data.role))
   },[user.email])
@@ -126,7 +132,7 @@ function Dashboard(props) {
       <CssBaseline />
       <AppBar
         position="fixed"
-        sx={{
+        sx={{ bgcolor: "success.main",
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
         }}

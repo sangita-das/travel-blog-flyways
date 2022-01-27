@@ -13,7 +13,7 @@ const ManageMyBlogs = () => {
     const {user} = useAuth()
     const [myBlogs, setMyBlogs] = useState([]);
     useEffect(()=>{
-        fetch(`http://localhost:5000/blogs/${user.email}`)
+        fetch(`https://lit-wildwood-89046.herokuapp.com/blogs/${user.email}`)
         .then(res => res.json())
         .then(data => setMyBlogs(data))
     },[user.email])
@@ -23,7 +23,7 @@ const ManageMyBlogs = () => {
         
         if(procced)
         {
-            fetch(`http://localhost:5000/blogs/${id}`,{
+            fetch(`https://lit-wildwood-89046.herokuapp.com/blogs/${id}`,{
                 method: 'DELETE'
             }).then(res => res.json())
             .then(data => {

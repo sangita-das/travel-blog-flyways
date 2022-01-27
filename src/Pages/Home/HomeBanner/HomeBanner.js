@@ -28,11 +28,11 @@ const HomeBanner = () => {
             
             className='col-lg-6 my-auto mb-3'>
                
-               <h2 className="fw-bold text-success">
+               <h2 className="fw-bold text-warning">
                
                <Typewriter
   options={{
-    strings: ['Welcome to FLYWAYS', 'Dare To Explore'],
+    strings: ['Welcome to FLYWAYS!!', 'Dare To Explore'],
     autoStart: true,
     loop: true,
   }}
@@ -41,7 +41,7 @@ const HomeBanner = () => {
                </h2>
               
                <p>Exploring means learning. Bring new experiences from each journey. Meet different cultures, traditions and landscapes. Choose your next destination and start your trip.When it comes to exploring exotic places, the choices are numerous. Whether you like peaceful destinations or vibrant landscapes, we have offers for you.</p>
-               <Button>Explore Now</Button>
+               <Button className="btn-light text-warning fw-bold "> <u>Explore Now</u> </Button>
             </div>
             <div  
             data-aos="fade-left"

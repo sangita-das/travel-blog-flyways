@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 const useBlog = () =>{
 
     const [blogs, setBlogs] = useState([]);
+    // console.log(blogs)
     let activeBlogs = [];
 
     const [isSubscribed, setIsSubscribed] = useState(true)
@@ -11,7 +12,7 @@ const useBlog = () =>{
     
     useEffect(()=>{
 
-            fetch('http://localhost:5000/blogs')
+            fetch('https://lit-wildwood-89046.herokuapp.com/blogs')
         .then(res => res.json())
         .then(data => {
             if(isSubscribed)
@@ -32,7 +33,7 @@ const useBlog = () =>{
     {
         if(blog.status === 'active')
         {
-            activeBlogs.push(blog)
+            blogs.push(blog)
         }
     }
 

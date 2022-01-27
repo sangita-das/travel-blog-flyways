@@ -12,7 +12,7 @@ const MyProfile = () => {
 
     
     useEffect(()=>{
-        fetch(`http://localhost:5000/users/${user.email}`)
+        fetch(`https://lit-wildwood-89046.herokuapp.com/users/${user.email}`)
         .then(res => res.json())
         .then(data => setUserInfo(data))
       },[user.email])
@@ -32,7 +32,7 @@ const MyProfile = () => {
         formData.append('email', user.email)
 
 
-        fetch(`http://localhost:5000/users/${user.email}`, {
+        fetch(`https://lit-wildwood-89046.herokuapp.com/users/${user.email}`, {
             method: 'PUT',
             body: formData
             })

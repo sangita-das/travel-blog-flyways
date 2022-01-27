@@ -14,7 +14,7 @@ const ManageOrders = () => {
     const his = useHistory();
     const [allOrders, setAllOrders] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/services/orders')
+        fetch('https://lit-wildwood-89046.herokuapp.com/services/orders')
         .then(res => res.json())
         .then(data => setAllOrders(data))
     },[])
@@ -24,7 +24,7 @@ const ManageOrders = () => {
         
         if(procced)
         {
-            fetch(`http://localhost:5000/services/order/${id}`,{
+            fetch(`https://lit-wildwood-89046.herokuapp.com/services/order/${id}`,{
                 method: 'DELETE'
             }).then(res => res.json())
             .then(data => {
@@ -41,7 +41,7 @@ const ManageOrders = () => {
    
 
     const updateOrder = id =>{
-        axios.put(`http://localhost:5000/services/orders/${id}`)
+        axios.put(`https://lit-wildwood-89046.herokuapp.com/services/orders/${id}`)
         .then(res => {
             if(res.data.modifiedCount>0)
             {

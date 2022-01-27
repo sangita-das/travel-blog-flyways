@@ -5,10 +5,11 @@ import Service from './Service';
 
 const Services = () => {
     const [services, setServices] = useState(null);
+    // console.log(services)
 
     useEffect(()=>{
-        // fetch('https://quiet-chamber-40235.herokuapp.com/products')
-        fetch('http://localhost:5000/services')
+       
+        fetch('https://lit-wildwood-89046.herokuapp.com/services')
         .then(res=>res.json())
         .then(data => setServices(data))
 
@@ -16,9 +17,9 @@ const Services = () => {
 
     if(services === null){return <Spinner animation="border" />}
     return (
-        <div style={{width:'90%'}} className="mx-auto">
+        <div style={{width:'90%'}} className="mx-auto text-warning">
             <h2 className="fw-bold">Top Destination & Available Package</h2>
-            <p style={{color:'gray'}}> -----------------------------------------------------</p>
+            <p style={{color:'grayLimeGreen'}}> -----------------------------------------------------</p>
             
             <Row xs={1} md={3}  className="my-5">
                {

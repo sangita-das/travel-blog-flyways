@@ -12,7 +12,7 @@ import Paper from '@mui/material/Paper';
 const ManageServices = () => {
     const [services, setServices] = useState([]);
     useEffect(()=>{
-        fetch( `http://localhost:5000/services`)
+        fetch( `https://lit-wildwood-89046.herokuapp.com/services`)
         .then(res => res.json())
         .then(data => setServices(data))
     },[]) 
@@ -22,7 +22,7 @@ const ManageServices = () => {
         
         if(procced)
         {
-            fetch(`http://localhost:5000/services/${id}`,{
+            fetch(`https://lit-wildwood-89046.herokuapp.com/services/${id}`,{
                 method: 'DELETE'
             }).then(res => res.json())
             .then(data => {

@@ -58,7 +58,7 @@
     "star": 3.5,
     "Email": "neelkomol@gmail.com",
     "description": "This tiny nature house sits on a terrace overlooking tranquil waters. Comfy sun loungers call for long evenings on the veranda and maybe a spot of birdwatching. Look out for buzzards, spoonbills, woodpeckers and owls. Foxes have been known to make an appearance too. "
-  },
+  }, 
   {
     "name": "Lakeshore Resort",
     "address": " Kaptai, Chittagong",
@@ -70,5 +70,86 @@
     "star": 4.5,
     "Email": "lresort@gmail.com",
     "description": "Bangladesh’s largest lake Kaptai was the result of the construction of Kaptai Dam on Karnaphuli River in Rangamati. Popular for delightful boat rides and wonderful sunsets, the changes in the lake’s water level in different seasons also create an illusion, making the surrounding beautiful hills — which are also just right for light trekking — appear bigger or smaller from time to time."
+  },
+  {
+    "name": " local delicacies",
+    "address": "Netherlands",
+    "BDT": 1028,
+    "img": "https://www.atlasandboots.com/wp-content/uploads/2021/10/real-life-hobbit-houses-enschede.jpg",
+    "Discount": "15%",
+    "mobile": "345013456845",
+    "key": "RDTFYGvh6787",
+    "star": 3.5,
+    "Email": "dhKresort@gmail.com",
+    "description": "A crackling fire, a blue tit nesting in the garden and a brook babbling in the distance. If this is your idea of a perfect evening, then consider this nature house in the Twente region of the Netherlands."
+  },
+  {
+    "name": "A touch of Mountain",
+    "address": "Poland",
+    "BDT": 1056,
+    "img": "https://www.atlasandboots.com/wp-content/uploads/2021/10/real-life-hobbit-houses-uitwijk.jpg",
+    "Discount": "5%",
+    "mobile": "4018753477",
+    "key": "DFg568yhjn",
+    "star": 4,
+    "Email": "sjresort@gmail.com",
+    "description": "Set in a picturesque corner of Uitwijk in the North Brabant region of the Netherlands, this nature house combines cosy comfort with modern convenience. A clean, minimalist design maximises the space inside while a wood stove outside makes for long romantic evenings even on chilly nights"
+  },
+  {
+    "name": "Third Terrace Resort",
+    "address": "India",
+    "BDT": 5112,
+    "img": "https://www.nature.house/cdn-cgi/image/width=757,height=489,quality=70,fit=cover/https://images.nature.house/house/35485/original/ab2ade2a73aa149bb224d5b459b63163.jpeg",
+    "Discount": "10%",
+    "mobile": "013576749",
+    "key": "&ITFjbhjb",
+    "star": 5,
+    "Email": "third.R.resort@gmail.com",
+    "description": "The grand colonial buildings of Mumbai. The beautiful beaches of Goa. The monuments of Delhi. There’s so much to shout about in India. It’s no wonder, then, this country has produced a galaxy of stars in the travel blogging field, who reveal their home country – and the world beyond – one post at a time."
+  },
+  {
+    "name": "Fall Colors in Ladakh",
+    "address": "Ladakh",
+    "BDT": 7200,
+    "img": "https://www.atlasandboots.com/wp-content/uploads/2021/10/real-life-hobbit-houses-berg3.jpg",
+    "Discount": "25%",
+    "mobile": "40178543467",
+    "key": "3esdfdy",
+    "star": 4.5,
+    "Email": "padma.M@gmail.com",
+    "description": "In Ladakh, you never know what surprise nature has in store for you. Pangong Lake, situated at a height of almost 4,350m, is the world’s highest saltwater lake. Its water, which seems to be dyed in blue, stand in stark contrast to the arid mountains surrounding it"
+  },
+  {
+    "name": "Reverie Holiday",
+    "address": "Salna, Guzipur Dhaka",
+    "BDT": 11084,
+    "img": "https://blog.flyticket.com.bd/wp-content/uploads/2019/06/reverie-holiday-resort.jpg",
+    "Discount": "10%",
+    "mobile": "01972678",
+    "key": "RUDtfgv89",
+    "star": 4,
+    "Email": "revereiholiday@gmail.com"
+  },
+  {
+    "name": " Nokkhottrobari",
+    "address": "Gazipur, Dhaka",
+    "BDT": 11094,
+    "img": "https://blog.flyticket.com.bd/wp-content/uploads/2019/06/nokkhottrobari-resort.jpg",
+    "Discount": "15%",
+    "mobile": "0109874209",
+    "key": "475rtvg",
+    "star": 5,
+    "Email": "s.resort.t@gmail.com"
+  },
+  {
+    "name": "Spring Valley",
+    "address": "Gazipur, Dhaka",
+    "BDT": 11056,
+    "img": "https://blog.flyticket.com.bd/wp-content/uploads/2019/06/srpring-valley-resort.jpg",
+    "Discount": "10%",
+    "mobile": "01534678",
+    "key": "D%$Rttgkj",
+    "star": 4,
+    "Email": "spring.sort@gmail.com"
   }
 ]

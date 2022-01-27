@@ -11,15 +11,15 @@ import Paper from '@mui/material/Paper';
 const ManageAllBlogs = () => {
     const [blogs, setBlogs] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/blogs')
+        fetch('https://lit-wildwood-89046.herokuapp.com/blogs')
         .then(res => res.json())
-        .then(data => setBlogs(data))
+        .then(data => setBlogs(data.blog))
     } , [])
         const handleDeleteBlogs = id =>{
         const procced = window.confirm("Are You Sure to Delete This Blogs ?")
         if(procced)
         {
-            fetch(`http://localhost:5000/blogs/${id}`,{
+            fetch(`https://lit-wildwood-89046.herokuapp.com/blogs/${id}`,{
                 method: 'DELETE'
             }).then(res => res.json())
             .then(data => {
@@ -38,7 +38,7 @@ const ManageAllBlogs = () => {
 
      const handleUpdateBlogs = id =>{
 
-      fetch(`http://localhost:5000/blogs/${id}`,{
+      fetch(`https://lit-wildwood-89046.herokuapp.com/blogs/${id}`,{
         method: 'PUT'
     }).then(res => res.json())
     .then(data => {
