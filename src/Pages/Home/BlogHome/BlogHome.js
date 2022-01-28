@@ -59,7 +59,7 @@ const BlogHome = () => {
                 <div 
                  
                 >
-                    <img className="img-fluid"  style={{width:'250px', height:'250px', borderRadius:'50%'}} src={`data:image/*;base64,${blog?.image}`}alt="" />
+                    <img className="img-fluid"  style={{width:'250px', height:'250px', borderRadius:'50%'}} src={`${blog?.image}`}alt="" />
                 </div>
                 <div >
                     <h4> {blog.title.slice(0,50)} </h4>
