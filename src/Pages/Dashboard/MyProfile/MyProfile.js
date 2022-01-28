@@ -6,6 +6,7 @@ import { useHistory } from 'react-router-dom';
 const MyProfile = () => { 
     const [image, setImage] = useState(null) 
     const [userInfo, setUserInfo] = useState([]);
+    console.log(userInfo)
     const [dob, setDob] = useState(null) 
     const { user } = useAuth();
     const history = useHistory();

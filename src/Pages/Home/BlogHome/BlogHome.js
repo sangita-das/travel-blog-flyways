@@ -53,7 +53,7 @@ const BlogHome = () => {
             data-aos-duration="1500"
             style={{
                     width:'400px',
-                    height:'600px',
+                    height:'700px',
                     border: '3px solid PaleGoldenRod'
                 }} className=" mx-auto text-center p-3">
                 <div 
@@ -64,6 +64,7 @@ const BlogHome = () => {
                 <div >
                     <h4> {blog.title.slice(0,50)} </h4>
                     <h5 style={{color:'green'}}> {blog?.author} </h5>
+                    <h6 style={{color:'blue'}}> {blog?.date} </h6>
                     <p>{blog.description.slice(0,250)}</p>
                     <Link to={`/blog/${blog?._id}`}>
                     <Button className='w-50 mx-auto' variant='success'> Read More </Button>

@@ -22,6 +22,7 @@ const Blog = ({blog}) => {
         <Card.Body>
           <Card.Title> {blog.title.slice(0,50)}  </Card.Title>
           <h5 style={{color:'green'}}> {blog?.author} </h5>
+          <h6 style={{color:'blue'}}> {blog?.date} </h6>
           <Card.Text>
           {blog.description?.slice(0,250)}
           </Card.Text>

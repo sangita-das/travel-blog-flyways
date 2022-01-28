@@ -33,7 +33,7 @@ const ManageMyBlogs = () => {
                   alert('Blog Deleted Successfully' )
                   
                } 
-               const remainigBlogs = myBlogs.filter(product => product._id !== id)
+               const remainigBlogs = myBlogs.filter(service => service._id !== id)
                 setMyBlogs(remainigBlogs)
             })
         }

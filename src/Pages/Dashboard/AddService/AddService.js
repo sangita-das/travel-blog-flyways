@@ -3,10 +3,11 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import { useForm } from "react-hook-form";
 
-const AddProduct = () => {
+const AddService = () => {
     const { register, handleSubmit, reset } = useForm();
+
   const onSubmit = data =>{
-   
+    console.log(data)
     axios.post('https://lit-wildwood-89046.herokuapp.com/services', data)
     .then(res=> {
         if(res.data.insertedId)
@@ -16,9 +17,10 @@ const AddProduct = () => {
         }
     })
   } 
+ 
     return (
         <div>
-            <h2 className="fw-bold mb-4">Please Add a Product</h2>
+            <h2 className="fw-bold mb-4">Please Add a Package</h2>
             <form onSubmit={handleSubmit(onSubmit)}> <br />
       <input {...register("name")} placeholder="package Name" /> <br />
       <input {...register("address")} placeholder="Location" /> <br />
@@ -32,4 +34,4 @@ const AddProduct = () => {
     );
 };
 
-export default AddProduct;
+export default AddService;

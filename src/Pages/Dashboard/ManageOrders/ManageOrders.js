@@ -13,6 +13,7 @@ import { useHistory } from 'react-router';
 const ManageOrders = () => {
     const his = useHistory();
     const [allOrders, setAllOrders] = useState([]);
+    
     useEffect(()=>{
         fetch('https://lit-wildwood-89046.herokuapp.com/services/orders')
         .then(res => res.json())
@@ -33,7 +34,7 @@ const ManageOrders = () => {
                   alert('Order Deleted')
                   
                } 
-               const remainigOrders = allOrders.filter(product => product._id !== id)
+               const remainigOrders = allOrders.filter(service => service._id !== id)
                 setAllOrders(remainigOrders)
             })
         }

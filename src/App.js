@@ -32,12 +32,12 @@ function App() {
               <Route  path="/login">
                 <Login></Login>
               </Route>
-              <Route  path="/dashboard">
+              <PrivateRoute  path="/dashboard">
                 <Dashboard></Dashboard>
-              </Route>
-              <Route path = '/blogs'>
+              </PrivateRoute>
+              <PrivateRoute path = '/blogs'>
              <Blogs></Blogs>
-          </Route>
+          </PrivateRoute>
           <Route path = '/blog/:id'>
              <BlogsDetails></BlogsDetails>
           </Route>

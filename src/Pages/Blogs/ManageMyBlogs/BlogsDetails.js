@@ -28,7 +28,7 @@ const BlogsDetails = () => {
         <div className="w-75 mx-auto my-5">
             <div>
                 
-                <img style={{width:'50%', height:'50%'}}  className='img-fluid my-4'  src={`${blog?.image}`} alt="" />
+                <img style={{width:'50%', height:'60%'}}  className='img-fluid my-4'  src={`${blog?.image}`} alt="" />
 
             </div> 
 

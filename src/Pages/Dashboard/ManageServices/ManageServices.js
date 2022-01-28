@@ -17,8 +17,8 @@ const ManageServices = () => {
         .then(data => setServices(data))
     },[]) 
 
-    const handleProductDelete = id =>{
-        const procced = window.confirm("Are You Sure to Delete Product ?")
+    const handleServiceDelete = id =>{
+        const procced = window.confirm("Are You Sure to Delete Service ?")
         
         if(procced)
         {
@@ -28,10 +28,10 @@ const ManageServices = () => {
             .then(data => {
                if(data.deletedCount > 0) 
                {
-                  alert('Product Deleted')
+                  alert('Service Deleted')
                   
                } 
-               const remainigOrders = services.filter(product => product._id !== id)
+               const remainigOrders = services.filter(service => service._id !== id)
                setServices(remainigOrders)
             })
         }
@@ -42,7 +42,7 @@ const ManageServices = () => {
       <Table  aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell>Product Id</TableCell>
+            <TableCell>Service Id</TableCell>
             <TableCell align="right">Resort Name</TableCell>
             <TableCell align="right">Location</TableCell>
             <TableCell align="right">price</TableCell>
@@ -61,7 +61,7 @@ const ManageServices = () => {
               <TableCell align="right">{row.name}</TableCell>
               <TableCell align="right">{row.address}</TableCell>
               <TableCell align="right">{row.BDT}</TableCell>
-              <TableCell align="right"><Button onClick={()=>handleProductDelete(row._id)}><i class="fas fa-trash-alt"></i></Button> </TableCell>
+              <TableCell align="right"><Button onClick={()=>handleServiceDelete(row._id)}><i class="fas fa-trash-alt"></i></Button> </TableCell>
             </TableRow>
           ))}
         </TableBody>

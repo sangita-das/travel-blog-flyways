@@ -30,7 +30,7 @@ const ManageAllBlogs = () => {
 
                   
                } 
-               const remainigBlogs = blogs.filter(product => product._id !== id)
+               const remainigBlogs = blogs.filter(service => service._id !== id)
                 setBlogs(remainigBlogs)
             })
         }
